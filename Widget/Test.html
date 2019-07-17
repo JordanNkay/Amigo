@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weather Widget</title>
+        <meta name="author" content="Jordan N'kunga" />
+        <meta name="description" content="A descriptive description" />
+
+        <link rel="stylesheet" type="text/css"
+            href="css/style.css" />
+        <script type="text/javascript"
+            src="js/script.js"></script>
+    </head>
+    <body onload="onLoad()">
+ 		<div class="container">
+	        <header class="header">
+		      <div class="search">
+		        <input type="text" placeholder="City Name" id="search-txt">
+		        <a id="search-btn" href="#"><i class="fas fa-search"></i></a>
+		      </div>
+		    </header>
+	 		<main id="main">
+		       	<div class="city-icon">
+			      <div class="city-icon-holder">
+			      <div id="city-name"></div>
+			      <img src="" alt="" id="icon">
+			        </div>
+			    </div>
+			    
+			    <div class="temperature">
+			      <div id="temperature-div"></div>
+			    </div>
+			    
+			    <div class="humidity">
+			      <div id="humidity-div"></div>
+			    </div>
+			</main>
+		</div>
+    </body>
+</html>
