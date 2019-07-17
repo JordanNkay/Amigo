@@ -1,14 +1,12 @@
 const appKey = "f24f40b1c24505685fce3b8acd0fcffc";
 
 function onLoad(){
-	var searchButton = document.getElementById('search-btn');
 	var searchInput = document.getElementById('search-txt');
 	var cityName = document.getElementById('city-name');
 	var icon = document.getElementById('icon');
 	var temperature = document.getElementById('temperature-div');
 	var humidity = document.getElementById('humidity-div');
 
-	searchButton.addEventListener('click', findWeatherDetails);
 	searchInput.addEventListener('keyup', enterPressed);
 
 	function enterPressed(event) {
