@@ -16,9 +16,7 @@ function onLoad(){
 	}
 
 	function findWeatherDetails() {
-	  if (searchInput.value === "") {
-	  
-	  }else {
+	  if (searchInput.value != ""){
 	    let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&appid="+appKey;
 	   httpRequestAsync(searchLink, theResponse);
 	  }
